@@ -40,5 +40,8 @@ taskInput.addEventListener('keypress', (event) => {
   }
 });
 
-// Call addTask on page load (optional)
-window.addEventListener('DOMContentLoaded', addTask);
+// Set up event listener for page load
+document.addEventListener('DOMContentLoaded', () => {
+  // Call addTask on page load (optional)
+  addTask();
+});
